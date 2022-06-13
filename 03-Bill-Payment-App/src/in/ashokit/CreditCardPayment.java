@@ -1,6 +1,6 @@
 package in.ashokit;
 
-public class CrediCardPayment implements IPayment {
+public class CreditCardPayment implements IPayment {
 
 	@Override
 	public String pay(double amount) {

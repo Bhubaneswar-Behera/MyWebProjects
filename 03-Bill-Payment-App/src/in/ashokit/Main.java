@@ -10,7 +10,7 @@ public class Main {
 		//Setter Injection Starts###################################
 		BillCollector billCollector = new BillCollector();
 		//Injecting CreditCard object into BillCollector through Setter method (Setter Injection)
-		billCollector.setPayment(new CrediCardPayment());
+		billCollector.setPayment(new CreditCardPayment());
 		billCollector.collectPayment(1400.00);
 		//Setter Injection End###################################
 		
