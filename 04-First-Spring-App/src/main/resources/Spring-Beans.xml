@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+		<!-- Bean Definition -->
+		
+		<bean id="creditCard" class="in.ashokit.CreditCardPayment"/>
+		<bean id ="debitCard" class ="in.ashokit.DebitCardPayment"/>
+		<bean id ="upi" class ="in.ashokit.UpiPayment"/>
+		
+		<bean id="billCollector" class="in.ashokit.BillCollector">
+				<property name="payment" ref="debitCard"/>
+		</bean>
+
+</beans>
