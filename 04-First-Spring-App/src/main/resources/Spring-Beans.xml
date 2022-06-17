@@ -11,7 +11,8 @@
 		<bean id ="upi" class ="in.ashokit.UpiPayment"/>
 		
 		<bean id="billCollector" class="in.ashokit.BillCollector">
-				<property name="payment" ref="debitCard"/>
+				<!--<property name="payment" ref="debitCard"/>-->
+				<constructor-arg name="payment" ref="upi"/>
 		</bean>
 
 </beans>
