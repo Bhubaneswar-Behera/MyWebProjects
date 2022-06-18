@@ -4,10 +4,17 @@ public class Car {
 	private DiselEngine diselEngine;
 	
 	public Car() {
-		System.out.println("Car:Constructor");
+		System.out.println("Car:0-param Constructor");
+	}
+	
+	public Car(DiselEngine diselEngine) {
+		System.out.println("Car:Param Constructor");
+		this.diselEngine = diselEngine;
+		
 	}
 	
 	public void setDiselEngine(DiselEngine diselEngine) {
+		System.out.println("setDiselEngine() method executed");
 		this.diselEngine = diselEngine;
 	}
 	
