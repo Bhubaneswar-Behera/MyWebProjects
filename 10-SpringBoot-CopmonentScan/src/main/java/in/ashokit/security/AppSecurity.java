@@ -12,16 +12,9 @@ import org.springframework.stereotype.Component;
  * @author Bhubaneswar Behera @date 23-Jun-2022
  *
  */
-@Configuration
+
 public class AppSecurity {
 	public AppSecurity() {
 		System.out.println("AppSecurity :: Constructor");
 	}
-	
-	@Bean
-	public AppSecurity createInstance() {
-		AppSecurity appSecurity = new AppSecurity();
-		return appSecurity;
-	}
-
 }
