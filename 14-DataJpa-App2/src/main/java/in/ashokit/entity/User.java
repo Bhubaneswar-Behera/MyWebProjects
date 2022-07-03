@@ -47,6 +47,10 @@ public class User {
 		this.age = age;
 		this.country = country;
 	}
-	
 
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", gender=" + gender + ", age=" + age
+				+ ", country=" + country + "]";
+	}
 }
