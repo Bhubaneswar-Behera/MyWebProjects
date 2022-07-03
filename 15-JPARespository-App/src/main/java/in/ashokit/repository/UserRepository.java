@@ -1,5 +1,7 @@
 package in.ashokit.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import in.ashokit.entity.User;
@@ -10,6 +12,8 @@ import in.ashokit.entity.User;
  *
  */
 
-public interface UserRepositoryJPA extends JpaRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, Integer>{
+	
+	
 
 }
