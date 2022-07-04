@@ -32,7 +32,6 @@ public class Application {
 		product2.setPid(102);
 		product2.setPname("Keyboard");
 		
-		
 		product3.setPid(103);
 		product3.setPname("HDD");
 		product3.setPrice(300.00);
