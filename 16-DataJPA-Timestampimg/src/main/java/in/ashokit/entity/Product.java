@@ -26,6 +26,7 @@ public class Product {
 	@Column(name = "PRODCUT_ID")
 	private int pid;
 	
+	
 	@Column(name = "PRODCUT_NAME")
 	private String pname;
 	
