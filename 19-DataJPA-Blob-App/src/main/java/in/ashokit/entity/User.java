@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
-
 import lombok.Data;
 
 /**
@@ -19,7 +18,7 @@ import lombok.Data;
  */
 @Entity
 @Table(name = "USER_TBL")
-//@Data
+@Data
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -73,6 +72,7 @@ public class User {
 		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userImage="
 				+ Arrays.toString(userImage) + "]";
 	}
-
 	
+	
+
 }
