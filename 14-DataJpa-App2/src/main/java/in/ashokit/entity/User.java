@@ -8,6 +8,7 @@ import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
  * 
@@ -17,8 +18,9 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "USER_MASTER")
 @Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class User {
 	
 	@Id
@@ -36,21 +38,7 @@ public class User {
 	
 	@Column(name = "USER_COUNTRY")
 	private String country;
-	public User () {
-		
-	}
 	
-	public User(int userId, String userName, String gender, int age, String country) {
-		this.userId = userId;
-		this.userName = userName;
-		this.gender = gender;
-		this.age = age;
-		this.country = country;
-	}
-
-	@Override
-	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", gender=" + gender + ", age=" + age
-				+ ", country=" + country + "]";
-	}
+	
+	
 }

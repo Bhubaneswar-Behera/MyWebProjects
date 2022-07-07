@@ -13,6 +13,9 @@ import javax.persistence.Table;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import lombok.Data;
+import lombok.ToString;
+
 /**
  * 
  * @author Bhubaneswar Behera @date 04-Jul-2022
@@ -20,6 +23,8 @@ import org.hibernate.annotations.UpdateTimestamp;
  */
 @Entity
 @Table(name = "PRODUCT_MASTER")
+@Data
+@ToString
 public class Product {
 	
 	@Id
@@ -41,53 +46,5 @@ public class Product {
 	@UpdateTimestamp
 	@Column(name = "UPDATED_DATE" ,  insertable = false)
 	private LocalDateTime updatedDate;
-
-	public int getPid() {
-		return pid;
-	}
-
-	public void setPid(int pid) {
-		this.pid = pid;
-	}
-
-	public String getPname() {
-		return pname;
-	}
-
-	public void setPname(String pname) {
-		this.pname = pname;
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
-	}
-
-	public LocalDateTime getCreatedDate() {
-		return createdDate;
-	}
-
-	public void setCreatedDate(LocalDateTime createdDate) {
-		this.createdDate = createdDate;
-	}
-
-	public LocalDateTime getUpdatedDate() {
-		return updatedDate;
-	}
-
-	public void setUpdatedDate(LocalDateTime updatedDate) {
-		this.updatedDate = updatedDate;
-	}
-
-	@Override
-	public String toString() {
-		return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + ", createdDate=" + createdDate
-				+ ", updatedDate=" + updatedDate + "]";
-	}
-	
-	
 
 }
