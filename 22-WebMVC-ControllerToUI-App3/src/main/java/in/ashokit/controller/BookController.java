@@ -26,5 +26,5 @@ public class BookController {
 		//return view name
 		return "book";
 	}
-
+	
 }
