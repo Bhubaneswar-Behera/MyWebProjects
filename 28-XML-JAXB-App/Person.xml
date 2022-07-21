@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+	<address>
+		<city>Hyd</city>
+		<country>India</country>
+		<state>TG</state>
+	</address>
+	<age>32</age>
+	<id>101</id>
+	<name>Ravi</name>
+	<phoneNumber>12345</phoneNumber>
+</person>
