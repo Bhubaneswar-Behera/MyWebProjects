@@ -1,0 +1,10 @@
+{
+	"name": "Spring",
+	"price": 560.0,
+	"author": {
+		"authorName": "Rod Johnson",
+		"authorEmail": "rod.johnson@gamil.com",
+		"authoPhoneNumber": 88236868
+	},
+	"bookId": 101
+}

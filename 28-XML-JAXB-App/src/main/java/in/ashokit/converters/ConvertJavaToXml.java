@@ -1,6 +1,7 @@
 package in.ashokit.converters;
 /**
- * 
+ *  Marshalling --> Java Object To XML
+ *  
  * @author Bhubaneswar Behera @date 21-Jul-2022
  *
  */
@@ -26,6 +27,7 @@ public class ConvertJavaToXml {
 		person.setName("Ravi");
 		person.setAge(32);
 		person.setPhoneNumber(12345);
+		person.setType("Doctor");
 		person.setAddress(address);
 		
 		
