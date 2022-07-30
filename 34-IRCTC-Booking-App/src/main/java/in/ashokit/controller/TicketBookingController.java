@@ -1,4 +1,4 @@
-package in.ashokit;
+package in.ashokit.controller;
 
 import java.util.UUID;
 
