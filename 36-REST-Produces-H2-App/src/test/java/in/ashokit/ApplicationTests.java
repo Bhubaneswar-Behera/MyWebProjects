@@ -8,10 +8,7 @@ class ApplicationTests {
 
 	@Test
 	void contextLoads() {
-<<<<<<< HEAD
-		
-=======
->>>>>>> d9ac75870ada2c0de75e9195cdfbdbd74106b3af
+
 	}
 
 }
