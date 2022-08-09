@@ -16,7 +16,7 @@ public class Application {
 		System.out.println("###############################################");
 		BookClient bookClient = context.getBean(BookClient.class);
 		System.out.println("###############################################");
-		//bookClient.invokeSaveBooks();
+		bookClient.invokeSaveBooks();
 		System.out.println("###############################################");
 		bookClient.invokeGetBooks();
 		System.out.println("###############################################");
