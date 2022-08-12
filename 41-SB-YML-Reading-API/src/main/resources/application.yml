@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: sb-yml-app
+ashokit:
+ messages:
+  welcomeMessage: Welcome to Spring Boot...!!!
+  greetMessage: Good Morning...!!!
+  wishMessage: All The Best...!!!
