@@ -1,0 +1,24 @@
+#management:
+ # endpoints:
+ #   web:
+ #    exposure:
+   #     include:
+    #    - beans
+     #   - mappings
+        
+#management:
+ # endpoints:
+  #  web:
+   #   exposure:
+    #    include: '*'
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude:
+        - beans
+  endpoint:
+   shutdown:
+    enabled: true
+              
